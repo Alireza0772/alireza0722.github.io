@@ -40,8 +40,8 @@ const SuperpositionText: React.FC<SuperpositionTextProps> = ({ text, className }
   useEffect(() => {
     let frame = 0;
     let raf: number;
-    const maxFrames = 30; // duration of animation per character
-    const collapseDelay = 10; // frames to wait before collapsing next char
+    const maxFrames = 10; // duration of animation per character
+    const collapseDelay = 2; // frames to wait before collapsing next char
     function animate() {
       let next = [...display];
       let done = true;
